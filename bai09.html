@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>THỰC HÀNH CSS</title>
+        <style>
+            h1{font-family: Georgia,  serif;color: blue;text-align: center;}
+            h2{font-family: 'Times New Roman',  serif;color: rgb(0, 89, 255);text-align: left;}
+            h3{color:indianred;text-align: center;font-size: 30pt}
+            p{color:rgb(67, 196, 67);font-size: 20pt;font-family: 'Segoe UI', sans-serif;}
+            textarea{background-color: ivory;}
+            input{background-color: yellow;}
+            fieldset{margin-left: 100px;margin-right: 100px;}
+            footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #8d8888;
+            color: #fff;
+            margin-top: 20px;
+        }
+        </style>
+    </head>
+    <body>
+        <h1>THỰC HÀNH ĐỊNH DẠNG MỘT SỐ THUỘC TÍNH CỦA CSS</h1>
+        <h2>Nhiệm vụ 1</h2>       
+             <form action="/bai09.html">
+                <fieldset>
+                    <h3>Đóng góp ý kiến cho thư viện của nhà trường</h3>
+                    <p>1. Thông tin về người góp ý</p>
+                    <label for="hoten">Họ và tên:</label> 
+                    <input id="ht" type="text" name="Hoten"> 
+                    <br>
+                    <br>
+                    <label for="email">Địa chỉ E-mail:</label>
+                    <input id="email" type="text" name="email">
+                    <br>
+                    <br>
+                    <p>2. Đóng góp ý khiến</p>
+                    <label for="ykien">Ý kiến đóng góp:</label>
+                    <textarea id="ykien" type="text" name="ykien" rows="4" cols="50"></textarea>
+                </fieldset>
+            </form>
+            <p ><font size="3cm">Thành viên của nhóm:</font>
+                <ol type=1 aria-setsize="3cm">
+                    <li>Mạnh Đức</li>
+                    <li>Gia Bảo</li>
+                </ol>
+                
+            </p>
+        <footer>
+            <p>Nguồn: Sách Giáo Khoa Cánh Diều</p>
+            <p><a href="https://www.hoc10.vn/doc-sach/tin-hoc-12-tin-hoc-ung-dung/1/737/2/">Địa chỉ đọc sách</a></p>
+          </footer>
+    </body>
+</html>

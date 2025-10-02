@@ -1,0 +1,7 @@
+h1{font-family: Georgia,  serif;color: blue;text-align: center;}
+h2{font-family: 'Times New Roman',  serif;color: rgb(0, 89, 255);text-align: left;}
+h3{color:indianred;text-align: center;font-size: 30pt}
+p{color:rgb(67, 196, 67);font-size: 20pt;font-family: 'Segoe UI', sans-serif;}
+textarea{background-color: rgb(237, 159, 202);}
+input{background-color: rgb(212, 255, 0);}
+fieldset{margin-left: 300px;margin-right: 300px;}

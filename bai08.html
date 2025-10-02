@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LÀM QUEN VỚI CSS</title>
+    <style>
+        h1{color:red;font-size: 1.2cm;font-family: Arial;}
+        h2{color:green;font-size: 1cm;font-family: Arial;}
+        h3{font-size: 1cm;font-family: Arial;color: blue;}
+        h4{font-size: 1cm;font-family: Arial;color: crimson;}
+        h5{font-size:medium; font-family:sans-serif ;font-style: italic;}
+        p {color: rgb(19, 18, 19); font-size: medium;font-family: 'Times New Roman';background-color: yellow;}
+        *{text-indent: 1em}
+   </style>
+</head>
+<body bgcolor="E8E8E8">
+    <h1 align="center"> CHỦ ĐỀ F: GIẢI QUYẾT VẤN ĐỀ VỚI SỰ TRỢ GIÚP CỦA MÁY TÍNH </h1>
+    <h2 align="center">TẠO TRANG WEB</h2>
+    <h3 align="center">BÀI 8 - LÀM QUEN VỚI CSS</h3>
+    <h4>1. Bảng định dạng</h4>
+    <p>
+            Cú pháp:<br>
+            <img src="./Anh/css1.png" /><br>
+            Ví dụ:<br>
+            <img src="./Anh/css2.png"
+    </p>
+    <h4>2. Một số thuộc tính của CSS</h4>
+        <h5>2.1: Định dạng font</h5>
+            <p>
+            a) Định dạng phông chữ: font-family<br>
+            <ul>
+                <li>Chữ không chân: sans-serif</li>
+                <li>Chữ có chân: serif</li>
+                <li>Chữ có chiều rộng đều nhau: monospace</li>
+                <li>Chữ viết tay: cursive</li>
+                <li>Chữ trừu tượng: fantasy</li>
+            </ul>
+            </p>
+            <p>
+            b) Định dạng cỡ chữ:<br>
+            Cỡ chữ có thể là một trong những dạng sau:<br>
+            <ul type="square">
+                <li>Cỡ chữ theo đơn vị đo chính xác tuyệt đối. Ví dụ: cm (centimét), mm (milimét), in (inch = 2,54 cm), px (pixel = 1/96 inch), pt (point = 1/72 inch)</li>
+                <li>Cỡ chữ theo các đơn vị đo tương đối:</li>
+                    <ul>
+                        <li><strong>em:</strong> so với cỡ chữ hiện thời của trình duyệt.</li>
+                        <li><strong>ex:</strong> so với chiều cao chữ x của cỡ chữ hiện thời.</li>
+                        <li><strong>rem:</strong> so với cỡ chữ của phần tử gốc html của tệp HTML.</li>
+                    </ul>
+                <li>Cỡ chữ theo tỉ lệ phần trăm (%) cỡ chữ của phần tử cha.</li>
+                <li>Cỡ chữ theo các mức xx-smal, x-small, medium, large, x-large, xx-large.</li>
+            </ul> 
+            *Cỡ chữ mặc định là medium.<br>
+            Ví dụ:<br>
+            <img src="./Anh/css3.png"><br>
+            </p>
+            <p>
+            c) Định dạng kiểu chữ:<br>
+            <ul>
+                <li><strong>font-style:</strong>normal (chữ thường), italics (chữ in nghiêng)</li>
+                <li><strong>font-weight:</strong>normal (chữ thường), bold (chữ in đậm), hoặc các giá trị số từ 100..900; trong đó từ 500 trở lên là in đậm </li>
+            </ul>
+            </p>
+            <p>
+            d) Định dạng màu chữ:<strong>color</strong><br>
+            <a href="https://saigonlabel.com/bang-code-mau/" target="_blank"> Bảng mã màu </a>
+            </p>
+    <h5>2.2: Định dạng dòng văn bản</h5>
+        <p>
+        a) Định dạng chiều cao dòng: <strong>line-height</strong><br>
+        Các thông số thường dùng:<br>
+        <ul type="disc">
+            <li>line-height: 3</li>
+            <li>line-height: 2em</li>
+            <li>line-height: 200%</li>
+        </ul>
+        </p>   
+        <p>
+        b) Căn lề:<strong>text-align</strong><br>
+        <ul type="circle">
+            <li>left</li>
+            <li>center</li>
+            <li>right</li>
+            <li>justify</li>
+        </ul>
+        </p>
+        <p>
+        c) Thụt lề: <strong>text-indent</strong><br>
+        <ol type=i>
+            <li>text-indent: 10px (dòng đầu tiên thụt vào đúng 10 pixel)</li>
+            <li>text-indent: 2em (dòng đầu tiên thụt vào bằng 2 ký tự)</li>
+            <li>text-indent: 200% (dòng đầu tiên thụt vào một khoảng cách bằng 5% chiều rộng của phần tử cha)</li>
+        </ol>
+        </p>
+        d) Tạo đường viền: <strong>border</strong>
+        <ul>
+            <li><strong>border-style:</strong> Kiểu đường viền</li>
+            <li><strong>border-color:</strong> Màu đường viền</li>
+        </ul>
+    <h4>3. Tính kế thừa và cách lựa chọn theo thứ tự của CSS</h4>
+        <h5>3.1. Tính kế thừa</h5>
+        <p>
+        Một tính chất rất quan trọng của CSS là tính kế thừa. Nếu một mẫu CSS áp dụng cho một phần tử HTML bất 
+        kỳ thì nó sẽ được tự động áp dụng cho tất cả các phần tử là con, cháu của phần tử đó trong mô hinhg cây HTML 
+        (trừ các trường hợp ngoại lệ, ví dụ các phần tử với mẫu định dạng riêng).</p>
+        <h5>3.2. Thứ tự ưu tiên</h5>
+        <p>
+        Do được phép có nhiều mẫu định dạng CSS nên có thể xảy ra trường hợp nhiều mẫu cùng áp dụng cho một phần tử HTML,
+        khi đó trình duyệt sẽ thực hiện mẫu định dạng được viết cuối cùng. Đây là tính chất "cascading" của CSS.</p>
+        <h5>3.3. Sử dụng ký hiệu đặc biệt</h5>
+        <p>
+            <ul>
+                <li><strong>Ký hiệu *</strong> dùng trong bộ chọn sẽ có ý nghìa là phần tử bất kỳ. Nếu có một mẫu định dạng chứa ký hiệu *
+                thì định dạng này sẽ áp dụng cho mọi phần tử mà chưa có trong bất kỳ mẫu định dạng nào khác của CSS. Mức độ ưu tiên của *
+                là thấp nhất.</li>
+                <li><strong>Ký hiệu !important</strong> được sử dụng trong mẫu định dạng thì mẫu này với thuộc tính tương ứng sẽ được ưu
+                tiên cao nhất mà không phụ thuộc vào vị trí của mẫu trong CSS.</li>
+            </ul></p>
+</body>
+</html>
